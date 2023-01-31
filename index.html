@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>3d Room</title>
+  <meta name="description" content="Hello, WebVR! • A-Frame" />
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-sky src="./assets/SKY.jpg"></a-sky>
+
+    <!-- FLOOR -->
+    <a-plane id="ground" src="./assets/FLOOR.jpg" position="0 0 0" rotation="-90 0 0" width="40" height="30">
+    </a-plane>
+
+    <!-- BACK WALL -->
+    <a-box id="wall" src="./assets/WALL.jpg" position="0 6.5 -4.5" width="40" height="25">
+    </a-box>
+
+    <!-- CARPET -->
+    <a-plane id="carpet" src="./assets/CARPET.jpeg" position="0 0.1 3.5" rotation="-90 0 0" width="20" height="9">
+    </a-plane>
+
+    <!-- LEFT POSTER -->
+    <a-plane id="wall-poster-left" src="./assets/LEFT-POSTER.jpg" position="-8.5 10 -3.3" rotation="0 0 0" width="8"
+      height="12"></a-plane>
+
+    <!-- MIDDLE POSTER -->
+    <a-plane id="wall-poster-middle" src="./assets/MIDDLE POSTER.jpg" position="0 10 -3.3" rotation="0 0 0" width="8"
+      height="12"></a-plane>
+
+    <!-- RIGHT POSTER -->
+    <a-plane id="wall-poster-right" src="./assets/RIGHT POSTER.webp" position="8.5 10 -3.3" rotation="0 0 0" width="8"
+      height="12"></a-plane>
+
+    <!--TABLE -->
+    <a-box src="./assets/TABLE.jpg" width="12" height="10.5" position="0 2 2.5" rotation="90 0 0" depth="0.5">
+      <a-cylinder src="./assets/TABLE.jpg" height="2.5" radius="0.8" rotation="90 0 0" position="-3 3 2">
+      </a-cylinder>
+      <a-cylinder src="./assets/TABLE.jpg" height="2.5" radius="0.8" rotation="90 0 0" position="3 3 2">
+      </a-cylinder>
+    </a-box>
+
+    <!-- CHAIR 1  -->
+    <a-cylinder src="./assets/CHAIR.webp" radius="1.2" position="7 -0.4 0">
+      <a-cylinder src="./assets/CHAIR.webp" radius="0.2" position="0 1 0" height="1.2">
+      </a-cylinder>
+      <a-cylinder src="./assets/CHAIR.webp" position="0 1.9 0" rotation="0 0 0" radius="1.3" height="0.2"></a-cylinder>
+      <a-cylinder src="./assets/CHAIR.webp" position="0.85 3 0" rotation="90 -90 0" radius="1.3" height="0.2">
+      </a-cylinder>
+    </a-cylinder>
+
+    <!-- CHAIR 3 -->
+    <a-cylinder src="./assets/CHAIR.webp" radius="1.2" position="7 -0.4 5">
+      <a-cylinder src="./assets/CHAIR.webp" radius="0.2" position="0 1 0" height="1.2">
+      </a-cylinder>
+      <a-cylinder src="./assets/CHAIR.webp" position="0 1.9 0" rotation="0 0 0" radius="1.3" height="0.2"></a-cylinder>
+      <a-cylinder src="./assets/CHAIR.webp" position="0.85 3 0" rotation="90 -90 0" radius="1.3" height="0.2">
+      </a-cylinder>
+    </a-cylinder>
+
+    <!-- CHAIR 2  -->
+    <a-cylinder src="./assets/CHAIR.webp" radius="1.2" position="-7 -0.4 0">
+      <a-cylinder src="./assets/CHAIR.webp" radius="0.2" position="0 1 0" height="1.2">
+      </a-cylinder>
+      <a-cylinder src="./assets/CHAIR.webp" position="0 1.9 0" rotation="0 0 0" radius="1.3" height="0.2"></a-cylinder>
+      <a-cylinder src="./assets/CHAIR.webp" position="-0.85 3 0" rotation="90 -90 0" radius="1.3" height="0.2">
+      </a-cylinder>
+    </a-cylinder>
+
+    <!-- CHAIR 4 -->
+    <a-cylinder src="./assets/CHAIR.webp" radius="1.2" position="-7 -0.4 5">
+      <a-cylinder src="./assets/CHAIR.webp" radius="0.2" position="0 1 0" height="1.2">
+      </a-cylinder>
+      <a-cylinder src="./assets/CHAIR.webp" position="0 1.9 0" rotation="0 0 0" radius="1.3" height="0.2"></a-cylinder>
+      <a-cylinder src="./assets/CHAIR.webp" position="-0.85 3 0" rotation="90 -90 0" radius="1.3" height="0.2">
+      </a-cylinder>
+    </a-cylinder>
+
+    <!-- Lamp -->
+
+    <!-- <a-cone color="pink" position="0 7.5 0" radius-top="0.5" radius-bottom="2">
+      <a-sphere color="#fff176" position="0 -0.5 0"></a-sphere>
+      <a-cylinder color="pink" radius="0.15" height="4" position="0 2 0"></a-cylinder>
+    </a-cone> -->
+
+    <!--  --------- CAMERA --------- -->
+
+    <a-camera look-controls-enabled wasd-controls-enabled position="0 5 15">
+    </a-camera>
+  </a-scene>
+  <!-- Closing scene -->
+</body>
+
+</html>
